@@ -23,7 +23,7 @@ export function Footer() {
                     </Link>
                     <div className="text-blue-100/80 max-w-sm leading-relaxed text-sm pl-12">
                         <p>〒220-0004</p>
-                        <p>神奈川県横浜市西区北幸2-10-48 むつみビル3階</p>
+                        <p>神奈川県横浜市西区北幸2-10-48<br />むつみビル3階</p>
                         <p>TEL：045-275-0717（代表）</p>
                     </div>
                 </div>
