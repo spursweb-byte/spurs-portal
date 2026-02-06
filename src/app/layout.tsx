@@ -15,8 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spurs Inc.",
-  description: "Official website of Spurs Inc. - Innovating for the future.",
+  title: "Spurs Portal | 案件・要員マッチングプラットフォーム",
+  description: "Spurs Inc.（スパーズ株式会社）のポータルサイトです。システム開発・SES事業における案件・人材のマッチングを、最短1時間・平均3時間のスピード回答でサポートします。掲載案件の80％以上が再委託可能・商流不問。",
+  openGraph: {
+    title: "Spurs Portal | 案件・要員マッチングプラットフォーム",
+    description: "最短1時間・平均3時間のスピード回答。掲載案件の80％以上が再委託可能・商流不問。Spurs Inc.の案件・要員検索ポータル。",
+    type: "website",
+    locale: "ja_JP",
+    siteName: "Spurs Portal",
+  },
 };
 
 export default function RootLayout({
