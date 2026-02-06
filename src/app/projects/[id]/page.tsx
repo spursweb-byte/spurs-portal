@@ -154,7 +154,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                         {/* Apply Buttons */}
                         <div className="flex flex-col gap-3">
                             <a
-                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=info@spurs-inc.com&su=案件応募: ${project.title}&body=担当者様%0D%0A%0D%0A以下の案件に応募したくご連絡いたしました。%0D%0A%0D%0A案件名：${project.title}%0D%0A%0D%0A氏名：%0D%0Aご連絡先：%0D%0A%0D%0Aよろしくお願いいたします。`}
+                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=support@spurs-inc.com&su=案件応募: ${project.title}&body=担当者様%0D%0A%0D%0A以下の案件に応募したくご連絡いたしました。%0D%0A%0D%0A案件名：${project.title}%0D%0A%0D%0A氏名：%0D%0Aご連絡先：%0D%0A%0D%0Aよろしくお願いいたします。`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group block w-full bg-spurs-blue text-white font-bold text-center py-4 rounded-xl shadow-xl shadow-spurs-blue/10 hover:-translate-y-1 transition-all"
@@ -163,7 +163,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                                 <span className="block text-[8px] font-normal opacity-70 mt-1">Gmailが起動します</span>
                             </a>
                             <a
-                                href={`mailto:info@spurs-inc.com?subject=案件応募: ${project.title}&body=担当者様...`}
+                                href={`mailto:support@spurs-inc.com?subject=案件応募: ${project.title}&body=担当者様...`}
                                 className="block w-full bg-white text-gray-500 font-bold text-xs text-center py-3 rounded-xl border border-gray-100 hover:bg-gray-50 transition-all"
                             >
                                 📧 既定のメールアプリで開く

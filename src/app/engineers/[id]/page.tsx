@@ -126,7 +126,7 @@ export default async function EngineerDetailPage({ params }: { params: Promise<{
                                 </a>
                             )}
                             <a
-                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=info@spurs-inc.com&su=要員照会: ${engineer.name}&body=担当者様%0D%0A%0D%0A以下のエンジニアについて提案をお願いしたくご連絡いたしました。%0D%0A%0D%0AID: ENG-${engineer.id.toString().padStart(4, '0')}%0D%0Aエンジニア名: ${engineer.name}%0D%0A%0D%0A貴社名：%0D%0Aご担当者名：%0D%0Aご連絡先：%0D%0A%0D%0Aよろしくお願いいたします。`}
+                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=support@spurs-inc.com&su=要員照会: ${engineer.name}&body=担当者様%0D%0A%0D%0A以下のエンジニアについて提案をお願いしたくご連絡いたしました。%0D%0A%0D%0AID: ENG-${engineer.id.toString().padStart(4, '0')}%0D%0Aエンジニア名: ${engineer.name}%0D%0A%0D%0A貴社名：%0D%0Aご担当者名：%0D%0Aご連絡先：%0D%0A%0D%0Aよろしくお願いいたします。`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group block w-full bg-spurs-blue text-white font-bold text-lg py-4 rounded-xl shadow-xl shadow-spurs-blue/20 hover:shadow-2xl hover:shadow-spurs-blue/30 hover:-translate-y-1 transition-all duration-300 text-center"
@@ -138,7 +138,7 @@ export default async function EngineerDetailPage({ params }: { params: Promise<{
                             </a>
 
                             <a
-                                href={`mailto:info@spurs-inc.com?subject=要員照会: ${engineer.name}&body=担当者様...`}
+                                href={`mailto:support@spurs-inc.com?subject=要員照会: ${engineer.name}&body=担当者様...`}
                                 className="block w-full bg-white text-gray-600 font-bold text-sm py-3 rounded-xl border border-gray-200 hover:bg-gray-50 hover:text-spurs-blue hover:border-spurs-blue/30 transition-all text-center"
                             >
                                 📧 既定のメールアプリで開く
