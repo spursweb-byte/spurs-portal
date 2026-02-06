@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spurs Portal | 案件・要員マッチングプラットフォーム",
-  description: "Spurs Inc.（スパーズ株式会社）のポータルサイトです。システム開発・SES事業における案件・人材のマッチングを、最短1時間・平均3時間のスピード回答でサポートします。掲載案件の80％以上が再委託可能・商流不問。",
+  title: "Spurs注力情報サイト",
+  description: "Spurs株式会社で取り扱っている情報を素早くチェック。最短60分でマッチング完了",
   openGraph: {
-    title: "Spurs Portal | 案件・要員マッチングプラットフォーム",
-    description: "最短1時間・平均3時間のスピード回答。掲載案件の80％以上が再委託可能・商流不問。Spurs Inc.の案件・要員検索ポータル。",
+    title: "Spurs注力情報サイト",
+    description: "Spurs株式会社で取り扱っている情報を素早くチェック。最短60分でマッチング完了",
     type: "website",
     locale: "ja_JP",
-    siteName: "Spurs Portal",
+    siteName: "Spurs注力情報サイト",
   },
 };
 
