@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  content     String?
+  requiredSkills String?
+  preferredSkills String?
+  price       String?
+  location    String?
+  workingHours String?
+  commercialRestriction String?
+  commercialStream String?
+  interviewCount String?
+  joiningPeriod  String?
+  priority    Int      @default(1)
+  isPublic    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Engineer {
+  id          Int      @id @default(autoincrement())
+  name        String
+  role        String
+  summary     String?
+  skills      String?
+  price       String?
+  location    String?
+  nearestStation String?
+  availability String?
+  genderAge    String?
+  skillSheetUrl String?
+  isPublic    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Inquiry {
+  id        Int      @id @default(autoincrement())
+  name      String
+  company   String?
+  email     String
+  phone     String
+  date1     String
+  date2     String?
+  date3     String?
+  content   String?
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0A192F;
+
+  /* Spurs Brand Colors */
+  --spurs-blue: #2d77b5;
+  --spurs-yellow: #f8d503;
+  --spurs-green: #30b776;
+  --spurs-red: #e63946;
+  --spurs-gray: #64748b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-spurs-blue: var(--spurs-blue);
+  --color-spurs-yellow: var(--spurs-yellow);
+  --color-spurs-green: var(--spurs-green);
+  --color-spurs-red: var(--spurs-red);
+  --color-spurs-gray: var(--spurs-gray);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
