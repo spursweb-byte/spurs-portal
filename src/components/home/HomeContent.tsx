@@ -150,7 +150,7 @@ export default function HomeContent({ activeProjectsCount, activeEngineersCount 
                     >
                         <div className="text-right mb-6 hidden md:block text-spurs-blue">
                             <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-1">Available Now</p>
-                            <p className="font-bold text-lg">{activeProjectsCount} PROJECTS / {activeEngineersCount} ENGINEERS</p>
+                            <p className="font-bold text-lg">{activeProjectsCount} PROJECTS / 99+ ENGINEERS</p>
                         </div>
 
                         <div className="flex flex-col gap-4 w-full md:w-72">
@@ -206,9 +206,9 @@ export default function HomeContent({ activeProjectsCount, activeEngineersCount 
                         },
                         {
                             label: "Total Engineers",
-                            value: activeEngineersCount,
+                            value: "99+",
                             color: "text-spurs-green",
-                            sub: null,
+                            sub: "More...",
                             jp: "紹介可能要員数",
                             href: "/engineers"
                         },
