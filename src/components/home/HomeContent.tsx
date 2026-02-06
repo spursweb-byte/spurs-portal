@@ -7,9 +7,10 @@ import Link from "next/link";
 
 interface HomeContentProps {
     activeProjectsCount: number;
+    activeEngineersCount: number;
 }
 
-export default function HomeContent({ activeProjectsCount }: HomeContentProps) {
+export default function HomeContent({ activeProjectsCount, activeEngineersCount }: HomeContentProps) {
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
             {/* Hero Section - Inspired by Leverages Design */}
@@ -149,7 +150,7 @@ export default function HomeContent({ activeProjectsCount }: HomeContentProps) {
                     >
                         <div className="text-right mb-6 hidden md:block text-spurs-blue">
                             <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-1">Available Now</p>
-                            <p className="font-bold text-lg">{activeProjectsCount} PROJECTS / 99+ ENGINEERS</p>
+                            <p className="font-bold text-lg">{activeProjectsCount} PROJECTS / {activeEngineersCount} ENGINEERS</p>
                         </div>
 
                         <div className="flex flex-col gap-4 w-full md:w-72">
@@ -205,9 +206,9 @@ export default function HomeContent({ activeProjectsCount }: HomeContentProps) {
                         },
                         {
                             label: "Total Engineers",
-                            value: "99+",
+                            value: activeEngineersCount,
                             color: "text-spurs-green",
-                            sub: "More...",
+                            sub: null,
                             jp: "紹介可能要員数",
                             href: "/engineers"
                         },

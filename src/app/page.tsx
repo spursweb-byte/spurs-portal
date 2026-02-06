@@ -6,5 +6,9 @@ export default async function Home() {
     where: { isPublic: true }
   });
 
-  return <HomeContent activeProjectsCount={activeProjectsCount} />;
+  const activeEngineersCount = await prisma.engineer.count({
+    where: { isPublic: true }
+  });
+
+  return <HomeContent activeProjectsCount={activeProjectsCount} activeEngineersCount={activeEngineersCount} />;
 }
