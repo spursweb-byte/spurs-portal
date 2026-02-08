@@ -100,6 +100,16 @@ export default function EngineerForm({ engineer }: EngineerFormProps) {
                     </div>
 
                     <div>
+                        <label className="block text-sm font-bold text-gray-700 mb-2">所属</label>
+                        <input
+                            name="affiliation"
+                            defaultValue={engineer?.affiliation || ""}
+                            className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-spurs-blue focus:outline-none"
+                            placeholder="例: 株式会社Spurs"
+                        />
+                    </div>
+
+                    <div>
                         <label className="block text-sm font-bold text-gray-700 mb-2">スキルシートURL</label>
                         <input
                             name="skillSheetUrl"

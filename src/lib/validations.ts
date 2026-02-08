@@ -38,6 +38,7 @@ export const engineerSchema = z.object({
     nearestStation: z.string().optional().nullable(),
     availability: z.string().optional().nullable(),
     genderAge: z.string().optional().nullable(),
+    affiliation: z.string().optional().nullable(),
     skillSheetUrl: z.string().url("有効なURLを入力してください").or(z.literal("")).optional().nullable(),
     isPublic: z.coerce.boolean().default(true),
 });

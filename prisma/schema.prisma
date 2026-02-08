@@ -48,6 +48,7 @@ model Engineer {
   nearestStation String?
   availability String?
   genderAge    String?
+  affiliation  String?
   skillSheetUrl String?
   isPublic    Boolean  @default(true)
   createdAt   DateTime @default(now())

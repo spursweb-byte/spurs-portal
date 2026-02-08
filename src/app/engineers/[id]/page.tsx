@@ -111,6 +111,12 @@ export default async function EngineerDetailPage({ params }: { params: Promise<{
                                     <p className="font-bold text-gray-800 text-sm">{engineer.genderAge}</p>
                                 </div>
                             )}
+                            {engineer.affiliation && (
+                                <div>
+                                    <p className="text-xs text-gray-400 mb-1 uppercase tracking-wider font-bold">所属</p>
+                                    <p className="font-bold text-gray-800 text-sm">{engineer.affiliation}</p>
+                                </div>
+                            )}
                         </div>
 
                         <div className="sticky top-24 flex flex-col gap-3">

@@ -40,6 +40,11 @@ export default async function EngineersPage() {
                                                     {eng.genderAge}
                                                 </span>
                                             )}
+                                            {eng.affiliation && (
+                                                <span className="text-[10px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-bold whitespace-nowrap shrink-0 border border-blue-100">
+                                                    {eng.affiliation}
+                                                </span>
+                                            )}
                                         </div>
                                         <div className="flex flex-col gap-1 mt-2">
                                             <p className="text-sm font-bold text-gray-700 truncate">
