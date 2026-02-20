@@ -105,7 +105,7 @@ export default function HomeContent({ activeProjectsCount, activeEngineersCount 
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 className="mb-10"
                             >
-                                <img src="/hero-main.png" alt="Spurs Logo" className="w-[400px] md:w-[600px] lg:w-[800px] h-auto" />
+                                <img src="/spu-support-logo.png" alt="Spuッポ！ SES営業支援ツール" className="w-[350px] md:w-[500px] lg:w-[650px] h-auto" />
                             </motion.div>
 
                             <motion.p

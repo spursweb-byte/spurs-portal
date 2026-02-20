@@ -34,7 +34,7 @@ export function Header() {
             <div className="w-full backdrop-blur-md bg-white/90 border-b border-spurs-blue/5">
                 <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                     <Link href="/" className="hover:opacity-80 transition-opacity flex items-center">
-                        <img src="/logo.png" alt="SPURS" className="h-10 md:h-14 w-auto" />
+                        <img src="/spu-support-logo.png" alt="Spuッポ！" className="h-10 md:h-12 w-auto" />
                     </Link>
 
                     <nav className="hidden md:flex items-center gap-8">

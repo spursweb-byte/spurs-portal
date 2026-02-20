@@ -40,6 +40,7 @@ export async function createEngineer(formData: FormData) {
 
     revalidatePath("/admin/engineers");
     revalidatePath("/engineers");
+    revalidatePath("/");
     redirect("/admin/engineers");
 }
 
@@ -79,6 +80,7 @@ export async function updateEngineer(id: number, formData: FormData) {
     revalidatePath("/admin/engineers");
     revalidatePath("/engineers");
     revalidatePath(`/engineers/${id}`);
+    revalidatePath("/");
     redirect("/admin/engineers");
 }
 
@@ -94,5 +96,6 @@ export async function deleteEngineer(id: number) {
 
     revalidatePath("/admin/engineers");
     revalidatePath("/engineers");
+    revalidatePath("/");
     redirect("/admin/engineers");
 }

@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("POSTGRES_PRISMA_URL")
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
@@ -18,41 +18,41 @@ model User {
 }
 
 model Project {
-  id          Int      @id @default(autoincrement())
-  title       String
-  description String
-  content     String?
-  requiredSkills String?
-  preferredSkills String?
-  price       String?
-  location    String?
-  workingHours String?
+  id                    Int      @id @default(autoincrement())
+  title                 String
+  description           String
+  content               String?
+  requiredSkills        String?
+  preferredSkills       String?
+  price                 String?
+  location              String?
+  workingHours          String?
   commercialRestriction String?
-  commercialStream String?
-  interviewCount String?
-  joiningPeriod  String?
-  priority    Int      @default(1)
-  isPublic    Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  commercialStream      String?
+  interviewCount        String?
+  joiningPeriod         String?
+  priority              Int      @default(1)
+  isPublic              Boolean  @default(true)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
 }
 
 model Engineer {
-  id          Int      @id @default(autoincrement())
-  name        String
-  role        String
-  summary     String?
-  skills      String?
-  price       String?
-  location    String?
+  id             Int      @id @default(autoincrement())
+  name           String
+  role           String
+  summary        String?
+  skills         String?
+  price          String?
+  location       String?
   nearestStation String?
-  availability String?
-  genderAge    String?
-  affiliation  String?
-  skillSheetUrl String?
-  isPublic    Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  availability   String?
+  genderAge      String?
+  affiliation    String?
+  skillSheetUrl  String?
+  isPublic       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 }
 
 model Inquiry {
