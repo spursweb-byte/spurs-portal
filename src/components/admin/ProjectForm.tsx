@@ -123,7 +123,7 @@ export default function ProjectForm({ project }: ProjectFormProps) {
                         <label className="block text-sm font-bold text-gray-700 mb-2">公開設定</label>
                         <select
                             name="isPublic"
-                            defaultValue={project?.isPublic ? "true" : "false"}
+                            defaultValue={project ? (project.isPublic ? "true" : "false") : "true"}
                             className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-spurs-blue focus:outline-none"
                         >
                             <option value="true">公開</option>

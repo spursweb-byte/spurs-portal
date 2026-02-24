@@ -5,13 +5,8 @@ export const dynamic = "force-dynamic";
 
 export default async function Home() {
   try {
-    const activeProjectsCount = await prisma.project.count({
-      where: { isPublic: true }
-    });
-
-    const activeEngineersCount = await prisma.engineer.count({
-      where: { isPublic: true }
-    });
+    const activeProjectsCount = await prisma.project.count();
+    const activeEngineersCount = await prisma.engineer.count();
 
     return <HomeContent activeProjectsCount={activeProjectsCount} activeEngineersCount={activeEngineersCount} />;
   } catch (error) {

@@ -201,7 +201,7 @@ export default function HomeContent({ activeProjectsCount, activeEngineersCount 
                             value: activeProjectsCount,
                             color: "text-spurs-yellow",
                             sub: null,
-                            jp: "公開案件数",
+                            jp: "案件数",
                             href: "/projects"
                         },
                         {
@@ -327,69 +327,7 @@ export default function HomeContent({ activeProjectsCount, activeEngineersCount 
                 </div>
             </section>
 
-            {/* Why Spurs Section */}
-            <section className="py-24 bg-white relative">
-                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                    <div className="space-y-8">
-                        <div>
-                            <h2 className="text-spurs-blue font-mono text-sm tracking-widest uppercase mb-4">Why Choose Us</h2>
-                            <h3 className="text-4xl md:text-5xl font-extrabold text-spurs-blue leading-tight">
-                                現場の「ズレ」をなくし、<br />
-                                最高のパフォーマンスを。
-                            </h3>
-                        </div>
-                        <ul className="space-y-4">
-                            {[
-                                "掲載案件の80％以上が再委託可能・商流不問",
-                                "最短1時間〜平均3時間以内の迅速なレスポンス",
-                                "案件・要員情報のリアルタイム公開による高い透明性",
-                                "パートナー企業様との強固な連携による継続的な共創"
-                            ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-3 text-gray-700 font-medium group">
-                                    <span className="w-6 h-6 rounded-full bg-spurs-green/10 flex items-center justify-center shrink-0 group-hover:bg-spurs-green transition-colors">
-                                        <CheckCircle2 className="w-4 h-4 text-spurs-green group-hover:text-white transition-colors" />
-                                    </span>
-                                    {text}
-                                </li>
-                            ))}
-                        </ul>
-                        <div className="pt-4">
-                            <Link href="/contact" className="inline-flex items-center gap-2 group text-spurs-blue font-bold border-b-2 border-spurs-yellow pb-2 hover:border-spurs-green transition-all">
-                                パートナー提携について相談する
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="relative">
-                        <div className="absolute -inset-4 bg-gradient-to-tr from-spurs-yellow to-spurs-green opacity-20 blur-2xl rounded-full animate-pulse" />
-                        <div className="relative bg-spurs-blue rounded-3xl p-8 md:p-12 shadow-2xl space-y-8">
-                            <div className="flex items-center gap-4 border-b border-white/10 pb-6">
-                                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                                    <MessageSquare className="w-6 h-6 text-spurs-yellow" />
-                                </div>
-                                <h4 className="text-white font-bold text-lg">スピード回答をお約束</h4>
-                            </div>
-                            <p className="text-blue-100/80 text-sm leading-relaxed">
-                                Spursのポータルサイトでは、すべての問い合わせに対し**最短1時間〜平均3時間以内**のレスポンスを徹底しています。
-                                「案件はあるが人がいない」「人はいるが案件が決まらない」そんなビジネスの停滞を、圧倒的なスピードで解消します。
-                            </p>
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                                    <p className="text-[10px] text-blue-200 font-bold uppercase mb-1">Open Streams</p>
-                                    <p className="text-xl font-black text-spurs-green">80.5%</p>
-                                </div>
-                                <div className="bg-white/5 p-4 rounded-xl border border-white/10 flex flex-col justify-center">
-                                    <p className="text-[10px] text-blue-200 font-bold uppercase mb-1">Speed to Match</p>
-                                    <div className="flex items-baseline gap-1">
-                                        <p className="text-xl font-black text-spurs-yellow">1</p>
-                                        <p className="text-[10px] font-bold text-spurs-yellow/80 uppercase">Business Day</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </div>
     );
 }
